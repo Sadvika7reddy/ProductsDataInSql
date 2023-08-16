@@ -1,0 +1,11 @@
+const mysql=require('mysql2');
+
+const pool=mysql.createPool({
+    host:"localhost",
+    user:"root",
+    database:'node-complete',
+    password:"PHW#84#jeoa"
+
+})
+
+module.exports=pool.promise()
